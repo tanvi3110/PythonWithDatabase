@@ -17,3 +17,9 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 * [JSON Spec Reference](https://www.json.org/json-en.html)
 * [SimpleJSON Reference](https://simplejson.readthedocs.io/en/latest/)
 * [W3 Schools SQL Tutorial and Reference](https://www.w3schools.com/sql/)
+
+
+# Postman Screenshot
+![Postman Request Output](screenshots/postman.PNG)
+# SQL Data Table Screenshot
+![PyCharm Data Query](screenshots/tables.png)
