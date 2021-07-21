@@ -7,5 +7,7 @@
     <orderEntry type="jdk" jdkName="Remote Python 3.8.10 Docker Compose (app at [C:\Users\shriy\PycharmProjects\FlaskDockerPython\docker-compose.yml])" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1.slim" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
   </component>
 </module>
