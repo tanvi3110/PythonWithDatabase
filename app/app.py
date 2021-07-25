@@ -3,11 +3,10 @@ import mysql.connector
 import simplejson as json
 from flask import Flask, Response
 from flask import render_template
-
 app = Flask(__name__)
 
 
-def cities_import() -> List[Dict]:
+def cities_import1() -> List[Dict]:
     config = {
         'user': 'root',
         'password': 'root',
@@ -18,7 +17,7 @@ def cities_import() -> List[Dict]:
     connection = mysql.connector.connect(**config)
     cursor = connection.cursor(dictionary=True)
 
-    cursor.execute('SELECT * FROM tblCitiesImport1')
+    cursor.execute('SELECT * FROM tblcitiesImport1')
     result = cursor.fetchall()
 
     cursor.close()
@@ -28,16 +27,15 @@ def cities_import() -> List[Dict]:
 
 
 @app.route('/')
-def index():
+def index1():
     user = {'username': 'Miguel'}
-    cities_data = cities_import()
-
+    cities_data = cities_import1()
     return render_template('index.html', title='Home', user=user, cities=cities_data)
 
 
 @app.route('/api/cities')
 def cities() -> str:
-    js = json.dumps(cities_import())
+    js = json.dumps(cities_import1())
     resp = Response(js, status=200, mimetype='application/json')
     return resp
 
