@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{city.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="latD">latD</label>
+            <input id="latD" type="text" class="form-control" placeholder="latD" name="latD" value="{{city.latD}}">
+        </div>
+        <div class="col">
+            <label for="latM">latM</label>
+            <input id="latM" type="text" class="form-control" placeholder="City latM"
+                   name="latM" value="{{city.latM}}">
+        </div>
+        <div class="col">
+            <label for="latS">latS</label>
+            <input id="latS" type="text" class="form-control" placeholder="latS" name="latS" value="{{city.latS}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="eW">eW</label>
+            <input id="eW" type="text" class="form-control" placeholder="eW" name="eW" value="{{city.eW}}">
+        </div>
+        <div class="col">
+            <label for="city">latM</label>
+            <input id="city" type="text" class="form-control" placeholder="city"
+                   name="city" value="{{city.city}}">
+        </div>
+        <div class="col">
+            <label for="state">latS</label>
+            <input id="state" type="text" class="form-control" placeholder="state" name="state" value="{{city.state}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="nS">nS</label>
+            <input id="nS" type="text" class="form-control" placeholder="nS" name="nS" value="{{city.nS}}">
+        </div>
+        <div class="col">
+            <label for="lonD">lonD</label>
+            <input id="lonD" type="text" class="form-control" placeholder="lonD" name="lonD" value="{{city.lonD}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="lonM">lonM</label>
+
+            <input id="lonM" type="text" class="form-control" placeholder="lonM"
+                   name="lonM" value="{{city.lonM}}">
+        </div>
+        <div class="col">
+            <label for="lonS">lonS</label>
+            <input id="lonS" type="text" class="form-control" placeholder="lonS" name="lonS" value="{{city.lonS}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}

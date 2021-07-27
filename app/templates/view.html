@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+    <h5 class="card-title">{{ city.city }}</h5>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ city.latD }}</li>
+        <li class="list-group-item">{{ city.latM }}</li>
+        <li class="list-group-item">{{ city.latS }}</li>
+        <li class="list-group-item">{{ city.nS }}</li>
+        <li class="list-group-item">{{ city.lonD }}</li>
+        <li class="list-group-item">{{ city.lonM }}</li>
+        <li class="list-group-item">{{ city.lonS }}</li>
+        <li class="list-group-item">{{ city.eW }}</li>
+        <li class="list-group-item">{{ city.city }}</li>
+        <li class="list-group-item">{{ city.state }}</li>
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{city.id}}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+<form action="/delete/{{city.id}}" method="post"><button type="submit" class="btn btn-danger">Save</button></form>
+
+
+{% endblock %}
