@@ -2,21 +2,22 @@ CREATE DATABASE citiesData1;
 Use citiesData1;
 
 CREATE TABLE IF NOT EXISTS tblcitiesImport1 (
-
-    `LatD` INT,
-    `LatM` INT,
-    `LatS` INT,
-    `NS` VARCHAR(4) CHARACTER SET utf8,
-    `LonD` INT,
-    `LonM` INT,
-    `LonS` INT,
-    `EW` VARCHAR(4) CHARACTER SET utf8,
-    `City` VARCHAR(21) CHARACTER SET utf8,
-    `State` VARCHAR(4) CHARACTER SET utf8
+     `id` int AUTO_INCREMENT,
+    `latD` INT,
+    `latM` INT,
+    `latS` INT,
+    `nS` VARCHAR(4) CHARACTER SET utf8,
+    `lonD` INT,
+    `lonM` INT,
+    `lonS` INT,
+    `eW` VARCHAR(4) CHARACTER SET utf8,
+    `city` VARCHAR(21) CHARACTER SET utf8,
+    `state` VARCHAR(4) CHARACTER SET utf8,
+     PRIMARY KEY (`id`)
 );
 
 INSERT INTO tblcitiesImport1
-(LatD,LatM,LatS,NS, LonD,LonM,Lons,EW,City,State) VALUES
+(latD,latM,latS,nS, lonD,lonM,lons,eW,city,state) VALUES
     (   41,    5,   59,' "N"',     80,   39,    0,' "W"',' "Youngstown"',' OH'),
     (   42,   52,   48,' "N"',     97,   23,   23,' "W"',' "Yankton"',' SD'),
     (   46,   35,   59,' "N"',    120,   30,   36,' "W"',' "Yakima"',' WA'),

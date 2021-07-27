@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/cities/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="latD">City Name</label>
+            <input id="latD" type="text" class="form-control" placeholder="city" name="latD">
+        </div>
+        <div class="col">
+            <label for="latM">City Abbreviation</label>
+            <input id="latM" type="text" class="form-control" placeholder="latM"
+                   name="fldAbbreviation">
+        </div>
+        <div class="col">
+            <label for="latS">City Country</label>
+            <input id="latS" type="text" class="form-control" placeholder="latS" name="latS">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="nS">City Latitude</label>
+            <input id="nS" type="text" class="form-control" placeholder="nS" name="nS">
+        </div>
+        <div class="col">
+            <label for="lonD">City Longitude</label>
+            <input id="lonD" type="text" class="form-control" placeholder="lonD" name="lonD">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="lonM">Capital Status</label>
+
+            <input id="lonM" type="text" class="form-control" placeholder="lonM "
+                   name="lonM">
+        </div>
+        <div class="col">
+            <label for="lonS">City Population</label>
+            <input id="lonS" type="text" class="form-control" placeholder="lonS" name="lonS">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Success</button>
+
+</form>
+
+{% endblock %}
