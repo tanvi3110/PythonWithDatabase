@@ -3,40 +3,54 @@
 <form action="/cities/new" method="POST">
     <div class="row">
         <div class="col">
-            <label for="latD">City Name</label>
-            <input id="latD" type="text" class="form-control" placeholder="city" name="latD">
+            <label for="city">City Name</label>
+            <input id="city" type="text" class="form-control" placeholder="city" name="city">
         </div>
         <div class="col">
-            <label for="latM">City Abbreviation</label>
-            <input id="latM" type="text" class="form-control" placeholder="latM"
-                   name="fldAbbreviation">
+            <label for="latD">LatD</label>
+            <input id="latD" type="text" class="form-control" placeholder="latD"
+                   name="latD">
         </div>
         <div class="col">
-            <label for="latS">City Country</label>
+            <label for="latM">LatM</label>
+            <input id="latM" type="text" class="form-control" placeholder="latM" name="latM">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="latS">LatS</label>
             <input id="latS" type="text" class="form-control" placeholder="latS" name="latS">
         </div>
-    </div>
-
-    <div class="row">
         <div class="col">
-            <label for="nS">City Latitude</label>
+            <label for="nS">NS</label>
             <input id="nS" type="text" class="form-control" placeholder="nS" name="nS">
         </div>
+    </div>
+    <div class="row">
         <div class="col">
-            <label for="lonD">City Longitude</label>
-            <input id="lonD" type="text" class="form-control" placeholder="lonD" name="lonD">
+            <label for="lonD">LonD</label>
+
+            <input id="lonD" type="text" class="form-control" placeholder="lonD"
+                   name="lonD">
+        </div>
+        <div class="col">
+            <label for="lonM">LonM</label>
+            <input id="lonM" type="text" class="form-control" placeholder="lonM" name="lonM">
+        </div>
+        <div class="col">
+            <label for="lonS">LonS</label>
+            <input id="lonS" type="text" class="form-control" placeholder="lonS" name="lonS">
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <label for="lonM">Capital Status</label>
-
-            <input id="lonM" type="text" class="form-control" placeholder="lonM "
-                   name="lonM">
+            <label for="eW">EW</label>
+            <input id="eW" type="text" class="form-control" placeholder="eW" name="eW">
         </div>
         <div class="col">
-            <label for="lonS">City Population</label>
-            <input id="lonS" type="text" class="form-control" placeholder="lonS" name="lonS">
+            <label for="state">NS</label>
+            <input id="state" type="text" class="form-control" placeholder="state" name="state">
         </div>
     </div>
     <button type="submit" class="btn btn-success">Success</button>

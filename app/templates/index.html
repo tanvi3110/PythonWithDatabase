@@ -3,6 +3,8 @@
 <table class="table">
     <thead>
     <tr>
+        <th scope="col">ID</th>
+        <th scope="col">City</th>
         <th scope="col">LatD</th>
         <th scope="col">LatM</th>
         <th scope="col">LatS</th>
@@ -11,23 +13,23 @@
         <th scope="col">LonM</th>
         <th scope="col">LonS</th>
         <th scope="col">EW</th>
-        <th scope="col">City</th>
         <th scope="col">State</th>
     </tr>
     </thead>
     <tbody>
     {% for city in cities %}
     <tr>
-        <td>{{ city.LatD }}</td>
-        <td>{{ city.LatM }}</td>
-        <td>{{ city.LatS }}</td>
-        <td>{{ city.NS }}</td>
-        <td>{{ city.LonD }}</td>
-        <td>{{ city.LonM }}</td>
-        <td>{{ city.LonS }}</td>
-        <td>{{ city.EW }}</td>
-        <td>{{ city.City }}</td>
-        <td>{{ city.State }}</td>
+        <td>{{ city.id}}
+        <td><a href="/view/{{city.id}}">{{ city.city }}</a></td>
+        <td>{{ city.latD }}</td>
+        <td>{{ city.latM }}</td>
+        <td>{{ city.latS }}</td>
+        <td>{{ city.nS }}</td>
+        <td>{{ city.lonD }}</td>
+        <td>{{ city.lonM }}</td>
+        <td>{{ city.lonS }}</td>
+        <td>{{ city.eW }}</td>
+        <td>{{ city.state }}</td>
     </tr>
     {% endfor %}
     </tbody>

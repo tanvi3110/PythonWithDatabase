@@ -5,22 +5,22 @@
     <h5 class="card-title">{{ city.city }}</h5>
 
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{ city.latD }}</li>
-        <li class="list-group-item">{{ city.latM }}</li>
-        <li class="list-group-item">{{ city.latS }}</li>
-        <li class="list-group-item">{{ city.nS }}</li>
-        <li class="list-group-item">{{ city.lonD }}</li>
-        <li class="list-group-item">{{ city.lonM }}</li>
-        <li class="list-group-item">{{ city.lonS }}</li>
-        <li class="list-group-item">{{ city.eW }}</li>
-        <li class="list-group-item">{{ city.city }}</li>
-        <li class="list-group-item">{{ city.state }}</li>
+        <li class="list-group-item"><b>LatD </b>{{ city.latD }}</li>
+        <li class="list-group-item"><b>LatM </b>{{ city.latM }}</li>
+        <li class="list-group-item"><b>LatS </b>{{ city.latS }}</li>
+        <li class="list-group-item"><b>NS </b>{{ city.nS }}</li>
+        <li class="list-group-item"><b>LonD </b>{{ city.lonD }}</li>
+        <li class="list-group-item"><b>LonM </b>{{ city.lonM }}</li>
+        <li class="list-group-item"><b>LonS </b>{{ city.lonS }}</li>
+        <li class="list-group-item"><b>EW </b>{{ city.eW }}</li>
+        <li class="list-group-item"><b>City </b>{{ city.city }}</li>
+        <li class="list-group-item"><b>State </b>{{ city.state }}</li>
     </ul>
     <div class="card-body">
         <a href="/edit/{{city.id}}" class="card-link btn btn-primary">edit</a>
     </div>
 </div>
-<form action="/delete/{{city.id}}" method="post"><button type="submit" class="btn btn-danger">Save</button></form>
+<form action="/delete/{{city.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
 
 
 {% endblock %}
