@@ -2,7 +2,7 @@ CREATE DATABASE citiesData1;
 Use citiesData1;
 
 CREATE TABLE IF NOT EXISTS tblcitiesImport1 (
-     `id` int AUTO_INCREMENT,
+    `id` int AUTO_INCREMENT,
     `latD` INT,
     `latM` INT,
     `latS` INT,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS tblcitiesImport1 (
 );
 
 INSERT INTO tblcitiesImport1
-(latD,latM,latS,nS, lonD,lonM,lons,eW,city,state) VALUES
+(latD,latM,latS,nS, lonD,lonM,lonS,eW,city,state) VALUES
     (   41,    5,   59,' "N"',     80,   39,    0,' "W"',' "Youngstown"',' OH'),
     (   42,   52,   48,' "N"',     97,   23,   23,' "W"',' "Yankton"',' SD'),
     (   46,   35,   59,' "N"',    120,   30,   36,' "W"',' "Yakima"',' WA'),
@@ -116,4 +116,6 @@ INSERT INTO tblcitiesImport1
     (   31,   27,   35,' "N"',    100,   26,   24,' "W"',' "San Angelo"',' TX'),
     (   40,   45,   35,' "N"',    111,   52,   47,' "W"',' "Salt Lake City"',' UT'),
     (   38,   22,   11,' "N"',     75,   35,   59,' "W"',' "Salisbury"',' MD'),
-    (   36,   40,   11,' "N"',    121,   39,    0,' "W"',' "Salinas"',' CA');
+    (   36,   40,   11,' "N"',    121,   39,    0,' "W"',' "Salinas"',' CA'),
+    (   31,   12,   41,' "N"',    99,   48,    60,' "W"',' "Virginia Beach"',' Va');
+
