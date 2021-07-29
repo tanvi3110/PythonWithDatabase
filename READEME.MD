@@ -20,7 +20,7 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 
 # SQL Data Table Screenshot
-![PyCharm Data Query](Screenshots/pycharm_table.png)
+![PyCharm Data Query](Screenshots/pycharm_table.PNG)
 
 # Home Page Screenshot
 ![Add new Data](Screenshots/Home Page.PNG)
