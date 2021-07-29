@@ -38,3 +38,6 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 # Delete Data Screenshot
 ![Add new Data](Screenshots/data_deleted.PNG)
+
+# Link To Document
+![Document](Screenshots/Document.docx)
