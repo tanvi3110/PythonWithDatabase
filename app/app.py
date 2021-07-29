@@ -62,7 +62,7 @@ def form_insert_get():
 @app.route('/cities/new', methods=['POST'])
 def form_insert_post():
     cursor = mysql.get_db().cursor()
-    inputData = (request.form.get('latD'), request.form.get('latM'), request.form.get('LatS'),
+    inputData = (request.form.get('latD'), request.form.get('latM'), request.form.get('latS'),
                  request.form.get('nS'), request.form.get('lonD'),
                  request.form.get('lonM'), request.form.get('lonS'), request.form.get('eW'),
                  request.form.get('city'), request.form.get('state'))
