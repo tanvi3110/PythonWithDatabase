@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FlaskDockerPython.iml" filepath="$PROJECT_DIR$/.idea/FlaskDockerPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PythonWithDatabase.iml" filepath="$PROJECT_DIR$/.idea/PythonWithDatabase.iml" />
     </modules>
   </component>
 </project>
