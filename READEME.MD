@@ -19,9 +19,22 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 * [W3 Schools SQL Tutorial and Reference](https://www.w3schools.com/sql/)
 
 
+# SQL Data Table Screenshot
+![PyCharm Data Query](Screenshots/pycharm_table.png)
+
+# Home Page Screenshot
+![Add new Data](Screenshots/Home Page.PNG)
+
+# View Data
+![Add new Data](Screenshots/view_click.PNG)
+
 # New Data Screenshot
 ![Add new Data](Screenshots/add_data.PNG)
 ![Add new Data](Screenshots/data_added.PNG)
 
-# SQL Data Table Screenshot
-![PyCharm Data Query](Screenshots/tables.png)
+# Edit Data Screenshot
+![Add new Data](Screenshots/edit_data.PNG)
+![Add new Data](Screenshots/data_edited.PNG)
+
+# Delete Data Screenshot
+![Add new Data](Screenshots/data_deleted.PNG)
